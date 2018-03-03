@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Barnacle.Settings
 {
-    public class SettingsViewModel : ObservableObject, IPageViewModel
+    public class SettingsViewModel : ObservablePage, IPageViewModel
     {
         public string Name
         {
-            get { return "Settings Page"; }
+            get { return "Settings"; }
         }
     }
 }

@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Barnacle
 {
-    public interface IPageViewModel
+    public class ObservablePage : ObservableObject
     {
-        string Name { get; }
-
-        bool IsSelected { get; set; }
+        public bool IsSelected { get; set; }
     }
 }

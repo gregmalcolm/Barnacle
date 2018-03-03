@@ -55,6 +55,7 @@
     </ApplicationDefinition>
     <Compile Include="ApplicationViewModel.cs" />
     <Compile Include="Helper Classes\ObservableObject.cs" />
+    <Compile Include="Helper Classes\ObservablePage.cs" />
     <Compile Include="Helper Classes\RelayCommand.cs" />
     <Compile Include="IPageViewModel.cs" />
     <Compile Include="Settings\SettingsView.xaml.cs">

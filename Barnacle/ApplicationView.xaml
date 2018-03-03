@@ -9,28 +9,37 @@
         mc:Ignorable="d"
         Title="Barnacle BGS" Height="800" Width="1240" >
     <Window.Resources>
-        <DataTemplate DataType="{x:Type status:StatusView}">
+        <DataTemplate DataType="{x:Type status:StatusViewModel}">
             <status:StatusView/>
         </DataTemplate>
-        <DataTemplate DataType="{x:Type settings:SettingsView}">
+        <DataTemplate DataType="{x:Type settings:SettingsViewModel}">
             <settings:SettingsView />
         </DataTemplate>        
     </Window.Resources>
 
     <DockPanel>
-        <Border DockPanel.Dock="Left" BorderBrush="Black" BorderThickness="0,0,1,0">
+        <Border DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="0,0,1,0">
             <ItemsControl ItemsSource="{Binding PageViewModels}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Content="{Binding Name}"
-                                Command="{Binding DataContext.ChangePageCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
-                                CommandParameter="{Binding }"
-                                Margin="2,5"/>
+                        <RadioButton 
+                            Style="{StaticResource {x:Type ToggleButton}}"
+                            GroupName="TopNav"
+                            IsChecked="{Binding IsSelected, Mode=TwoWay}"
+                            Content="{Binding Name}"
+                            Command="{Binding DataContext.ChangePageCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                            CommandParameter="{Binding }"                                      
+                            Margin="4,5"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </Border>
-
+        
         <ContentControl Content="{Binding CurrentPageViewModel}" />
     </DockPanel>
 </Window>

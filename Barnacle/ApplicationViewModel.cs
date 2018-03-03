@@ -10,14 +10,10 @@ namespace Barnacle
 {
     public class ApplicationViewModel : ObservableObject
     {
-        #region Fields
-
         private ICommand _changePageCommand;
 
         private IPageViewModel _currentPageViewModel;
         private List<IPageViewModel> _pageViewModels;
-
-        #endregion
 
         public ApplicationViewModel()
         {
@@ -27,9 +23,9 @@ namespace Barnacle
 
             // Set starting page
             CurrentPageViewModel = PageViewModels[0];
+            CurrentPageViewModel.IsSelected = true;
         }
 
-        #region Properties / Commands
 
         public ICommand ChangePageCommand
         {
@@ -73,10 +69,6 @@ namespace Barnacle
             }
         }
 
-        #endregion
-
-        #region Methods
-
         private void ChangeViewModel(IPageViewModel viewModel)
         {
             if (!PageViewModels.Contains(viewModel))
@@ -85,7 +77,5 @@ namespace Barnacle
             CurrentPageViewModel = PageViewModels
                 .FirstOrDefault(vm => vm == viewModel);
         }
-
-        #endregion
     }
 }

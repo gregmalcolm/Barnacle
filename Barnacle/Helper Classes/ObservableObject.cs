@@ -75,6 +75,7 @@ namespace Barnacle
             }
         }
 
+
         #endregion // INotifyPropertyChanged Members
     }
 }

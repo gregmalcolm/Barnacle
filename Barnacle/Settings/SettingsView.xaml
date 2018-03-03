@@ -6,7 +6,10 @@
              xmlns:local="clr-namespace:Barnacle.Settings"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
+    <Grid Margin="-188,0,-228,0">
+        <Button Content="Button" Margin="218,61,0,0" VerticalAlignment="Top" Width="74" HorizontalAlignment="Center">
             
+        </Button>
+
     </Grid>
 </UserControl>

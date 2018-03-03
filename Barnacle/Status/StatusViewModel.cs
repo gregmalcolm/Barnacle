@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Barnacle.Status
 {
-    public class StatusViewModel : ObservableObject, IPageViewModel
+    public class StatusViewModel : ObservablePage, IPageViewModel
     {
         public string Name
         {
-            get { return "Status Page"; }
+            get { return "Status"; }
         }
     }
 }
