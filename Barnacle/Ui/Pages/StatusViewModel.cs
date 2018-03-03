@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Barnacle.Settings
+namespace Barnacle.Ui.Pages
 {
-    public class SettingsViewModel : ObservablePage, IPageViewModel
+    public class StatusViewModel : ObservablePage, IPageViewModel
     {
         public string Name
         {
-            get { return "Settings"; }
+            get { return "Status"; }
         }
     }
 }

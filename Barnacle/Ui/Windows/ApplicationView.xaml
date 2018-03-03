@@ -4,16 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Barnacle.Ui.Windows"
-        xmlns:status="clr-namespace:Barnacle.Status"
-        xmlns:settings="clr-namespace:Barnacle.Settings"        
+        xmlns:pages="clr-namespace:Barnacle.Ui.Pages"        
         mc:Ignorable="d"
                 Title="Barnacle BGS" Height="800" Width="1240">
     <Window.Resources>
-        <DataTemplate DataType="{x:Type status:StatusViewModel}">
-            <status:StatusView/>
+        <DataTemplate DataType="{x:Type pages:StatusViewModel}">
+            <pages:StatusView/>
         </DataTemplate>
-        <DataTemplate DataType="{x:Type settings:SettingsViewModel}">
-            <settings:SettingsView />
+        <DataTemplate DataType="{x:Type pages:SettingsViewModel}">
+            <pages:SettingsView />
         </DataTemplate>
     </Window.Resources>
 

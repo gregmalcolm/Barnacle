@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Barnacle.Status
+namespace Barnacle.Ui.Pages
 {
     /// <summary>
-    /// Interaction logic for StatusView.xaml
+    /// Interaction logic for SettingsView.xaml
     /// </summary>
-    public partial class StatusView : UserControl
+    public partial class SettingsView : UserControl
     {
-        public StatusView()
+        public SettingsView()
         {
             InitializeComponent();
         }

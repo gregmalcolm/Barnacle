@@ -4,14 +4,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace Barnacle.Status
+namespace Barnacle.Ui.Pages
 {
-    public class StatusViewModel : ObservablePage, IPageViewModel
+    public class SettingsViewModel : ObservablePage, IPageViewModel
     {
         public string Name
         {
-            get { return "Status"; }
+            get { return "Settings"; }
         }
     }
 }

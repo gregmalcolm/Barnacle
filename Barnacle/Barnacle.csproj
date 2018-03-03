@@ -54,17 +54,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Ui\Helpers\ObservableObject.cs" />
-    <Compile Include="Ui\Helpers\ObservablePage.cs" />
+    <Compile Include="Ui\Pages\ObservablePage.cs" />
     <Compile Include="Ui\Helpers\RelayCommand.cs" />
-    <Compile Include="Ui\IPageViewModel.cs" />
-    <Compile Include="Ui\Settings\SettingsView.xaml.cs">
+    <Compile Include="Ui\Pages\IPageViewModel.cs" />
+    <Compile Include="Ui\Pages\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Ui\Settings\SettingsViewModel.cs" />
-    <Compile Include="Ui\Status\StatusView.xaml.cs">
+    <Compile Include="Ui\Pages\SettingsViewModel.cs" />
+    <Compile Include="Ui\Pages\StatusView.xaml.cs">
       <DependentUpon>StatusView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Ui\Status\StatusViewModel.cs" />
+    <Compile Include="Ui\Pages\StatusViewModel.cs" />
     <Compile Include="Ui\Windows\ApplicationView.xaml.cs">
       <DependentUpon>ApplicationView.xaml</DependentUpon>
     </Compile>
@@ -73,11 +73,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Ui\Settings\SettingsView.xaml">
+    <Page Include="Ui\Pages\SettingsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Ui\Status\StatusView.xaml">
+    <Page Include="Ui\Pages\StatusView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
