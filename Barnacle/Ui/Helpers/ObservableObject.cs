@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Collections;
 using System.ComponentModel;
 
-namespace Barnacle
+namespace Barnacle.Ui.Windows.Helpers
 {
     public abstract class ObservableObject : INotifyPropertyChanged
     {

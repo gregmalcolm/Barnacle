@@ -1,14 +1,17 @@
 ﻿using Barnacle.Settings;
 using Barnacle.Status;
+using Barnacle.Ui.Windows.Helpers;
+using Barnacle.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace Barnacle
+namespace Barnacle.Ui.Windows
 {
-    public class ApplicationViewModel : ObservableObject
+    public class ApplicationViewModel
     {
         private ICommand _changePageCommand;
 
@@ -67,6 +70,11 @@ namespace Barnacle
                     OnPropertyChanged("CurrentPageViewModel");
                 }
             }
+        }
+
+        private void OnPropertyChanged(string v)
+        {
+            throw new NotImplementedException();
         }
 
         private void ChangeViewModel(IPageViewModel viewModel)

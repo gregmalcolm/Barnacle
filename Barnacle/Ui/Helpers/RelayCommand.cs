@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Windows.Input;
 
-namespace Barnacle
+namespace Barnacle.Ui.Windows.Helpers
 {
     /// <summary>
     /// A command whose sole purpose is to 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Barnacle
+namespace Barnacle.Ui.Windows.Helpers
 {
     public class ObservablePage : ObservableObject
     {
