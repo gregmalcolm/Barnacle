@@ -102,7 +102,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\CollectionStatus.cs" />
     <Compile Include="Models\Systems.cs" />
+    <Compile Include="Models\SystemStatus.cs" />
+    <Compile Include="Models\SystemStatuses.cs" />
+    <Compile Include="Ui\Components\BgsCollectionStatusView.xaml.cs">
+      <DependentUpon>BgsCollectionStatusView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\Components\BgsCollectionStatusViewModel.cs" />
+    <Compile Include="Ui\Components\StatusPaneView.xaml.cs">
+      <DependentUpon>StatusPaneView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Ui\Helpers\ObservableObject.cs" />
     <Compile Include="Ui\Pages\ObservablePage.cs" />
     <Compile Include="Ui\Helpers\RelayCommand.cs" />
@@ -123,6 +133,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Ui\Components\BgsCollectionStatusView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ui\Components\StatusPaneView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Ui\Pages\SettingsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -8,8 +8,6 @@ namespace Barnacle.Ui.Windows.Helpers
 {
     public abstract class ObservableObject : INotifyPropertyChanged
     {
-        #region Debugging Aides
-
         /// <summary>
         /// Warns the developer if this object does not have
         /// a public property with the specified name. This 
@@ -39,10 +37,6 @@ namespace Barnacle.Ui.Windows.Helpers
         /// override this property's getter to return true.
         /// </summary>
         protected virtual bool ThrowOnInvalidPropertyName { get; private set; }
-
-        #endregion // Debugging Aides
-
-        #region INotifyPropertyChanged Members
 
         /// <summary>
         /// Raises the PropertyChange event for the property specified
@@ -74,8 +68,5 @@ namespace Barnacle.Ui.Windows.Helpers
                 handler(this, e);
             }
         }
-
-
-        #endregion // INotifyPropertyChanged Members
     }
 }

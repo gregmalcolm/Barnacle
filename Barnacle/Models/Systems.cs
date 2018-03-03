@@ -8,7 +8,7 @@ namespace Barnacle.Models
 {
     public class Systems
     {
-        public List<String> all
+        public List<String> All
         {
             get
             {
