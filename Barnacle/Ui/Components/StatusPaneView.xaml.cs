@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Barnacle.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace Barnacle.Ui.Components
         public StatusPaneView()
         {
             InitializeComponent();
+        }
+
+        private void EddnDownload_Click(object sender, RoutedEventArgs e)
+        {
+            EliteBgsReader.Download();
         }
     }
 }

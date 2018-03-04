@@ -17,7 +17,7 @@
     </Window.Resources>
 
     <DockPanel>
-        <Border DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="0,0,1,0">
+        <Border DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="0,0,1,0" Background="DarkGray">
             <ItemsControl ItemsSource="{Binding PageViewModels}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>

@@ -83,6 +83,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -104,11 +105,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\CollectionStatus.cs" />
+    <Compile Include="Models\FactionData.cs" />
     <Compile Include="Models\Systems.cs" />
     <Compile Include="Models\SystemStatus.cs" />
     <Compile Include="Models\SystemStatuses.cs" />
     <Compile Include="Models\TickTime.cs" />
-    <Compile Include="Services\IgtConverter.cs" />
+    <Compile Include="Helpers\IgtConverter.cs" />
+    <Compile Include="Services\EliteBgsReader.cs" />
+    <Compile Include="Services\Http.cs" />
     <Compile Include="Ui\Components\BgsCollectionStatusView.xaml.cs">
       <DependentUpon>BgsCollectionStatusView.xaml</DependentUpon>
     </Compile>

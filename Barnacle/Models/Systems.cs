@@ -26,7 +26,7 @@ namespace Barnacle.Models
                     "Mechet",
                     "HR 6189",
                     "Paledawa",
-                    "Andaris",
+                    "Andvaris",
                     "HIP 84696",
                     "Mahamanpa",
                     "Purungarang"
