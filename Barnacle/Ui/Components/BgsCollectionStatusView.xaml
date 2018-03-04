@@ -12,6 +12,8 @@
     <DataGrid ItemsSource="{Binding SystemStatuses}" AutoGenerateColumns="false" CanUserAddRows="false">
         <DataGrid.Columns>
             <DataGridTextColumn Header="System" Binding="{Binding System}"/>
+            <DataGridTextColumn Header="EDDN: Last received" Binding="{Binding LocalEddnStatus.LastUpdatedText}"/>
+            <DataGridTextColumn Header="EDDN: Last sent" Binding="{Binding ServerEddnStatus.LastUpdatedText}"/>
         </DataGrid.Columns>
     </DataGrid>
 </UserControl>
