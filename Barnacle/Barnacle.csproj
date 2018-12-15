@@ -106,6 +106,7 @@
     </ApplicationDefinition>
     <Compile Include="Models\CollectionStatus.cs" />
     <Compile Include="Models\FactionData.cs" />
+    <Compile Include="Models\StateDetail.cs" />
     <Compile Include="Models\Systems.cs" />
     <Compile Include="Models\SystemStatus.cs" />
     <Compile Include="Models\SystemStatuses.cs" />
